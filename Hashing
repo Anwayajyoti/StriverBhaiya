@@ -1,0 +1,61 @@
+'''arr=[1,2,1,3,2]
+hash=[]
+number=3
+for i in range(len(arr)):
+    hash.append(0)
+for i in range(len(arr)):
+    hash[arr[i]]+=1
+print(f"{number} occurs {hash[number]} times")'''
+
+#-------------------------------------------------------------------------------
+
+'''s='abcdabefc'
+hash=[]
+letter='d'
+for i in range(0,ord('z')+1):
+    hash.append(0)
+
+for i in s:
+    hash[ord(i)]+=1
+
+print(f"{letter} occurs {hash[ord(letter)]} times")'''
+
+#-------------------------------------------------------------------------------
+
+'''s='abcdabefc'
+character='d'
+hash=[]
+for i in range(27):
+    hash.append(0)
+for i in s:
+    #hash[ord(i)-ord('a')]+=1
+print(f"{character} occurs {hash[ord(character)-ord('a')]} times")'''
+
+#-------------------------------------------------------------------------------
+#USING DICTIONARY AS INTEGER ALLOWS UPTO 10^6 or 10^7 in PLACE CALLED GLOBALY:
+'''num=[1,2,1,3,2]
+integer=3
+d={}
+for i in num:
+    d[i]=0
+for i in num:
+    d[i]+=1
+print(f"{integer} occurs {d[integer]} times")'''
+
+#-------------------------------------------------------------------------------
+
+s='abcdabefc'
+ch='a'
+d={}
+for i in s:
+    d[i]=0
+for i in s:
+    d[i]+=1
+print(f"{ch} occurs {d[ch]} times")
+
+#-------------------------------------------------------------------------------
+
+#1) DIVISION METHOD
+#2) FOLDING METHOD
+#3) MID SQUARE METHOD
+
