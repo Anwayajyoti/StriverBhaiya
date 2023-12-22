@@ -1,0 +1,25 @@
+arr=[1,4,8,13]
+k=5
+
+def frequency(arr,k):
+    #Sort the array
+    arr.sort()
+    #Initialize left=0 to mark left boundary
+    left=0
+    #Initialise maxFreq to store MAXIMUM FREQUENCY
+    maxFreq=0
+    operations=0
+    #Use RIGHT to iterate through the array. Representing the RIGHT BOUNDARY
+    for right in range(len(arr)):
+        #Calculate how many operations required to make all elements equal in current window
+        operations+=(arr[right]-arr[right-1])*(right-left)
+        #If total operations exceed k, INITIALIZE LEFT
+        while operations>k:
+            operations-=arr[right]-arr[left]
+            left+=1
+        #Update maxFreq based on current window size
+        maxFreq=max(maxFreq,right-left+1)
+
+    return(maxFreq)
+
+print(frequency(arr,k))
