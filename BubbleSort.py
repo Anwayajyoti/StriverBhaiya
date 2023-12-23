@@ -1,3 +1,7 @@
+#PUSH MAXIMUM AT LAST BY ADJACENT POSITION
+#O(n) -> BEST
+#O(n2) -> AVG and WORST
+
 #arr=[13,46,24,52,20,9]
 #>[13,46,24,52,20,9]
 #>[13,24,46,52,20,9]
@@ -5,6 +9,7 @@
 #>[13,24,46,20,52,9]
 #>[13,24,46,20,9,52]  //COMPLETION OF ONE ITERATION
 
+#CODE:
 arr=[13,46,24,52,20,9]
 n= len(arr)
 
