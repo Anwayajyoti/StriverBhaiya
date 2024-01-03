@@ -16,4 +16,32 @@ def RotateImage(a):
 RotateImage(a1)
 print()
 RotateImage(a2)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#OPTIMAL APPRACH:
+
+arr=[[1,2,3],[4,5,6],[7,8,9]]
+n=len(arr)
+
+for i in range(n):
+    for j in range(i+1,n):
+        temp=arr[i][j]
+        arr[i][j]=arr[j][i]
+        arr[j][i]=temp
+for i in range(n):
+    arr[i]=arr[i][::-1]
+        
+for i in range(n):
+    for j in range(n):
+        print(arr[i][j],end=' ')
+    print()
+
+
+
+
+
+
+
+
+
 
