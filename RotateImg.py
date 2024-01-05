@@ -24,11 +24,11 @@ arr=[[1,2,3],[4,5,6],[7,8,9]]
 n=len(arr)
 
 for i in range(n):
-    for j in range(i+1,n):
+    for j in range(i+1,n):#Transpose
         temp=arr[i][j]
         arr[i][j]=arr[j][i]
         arr[j][i]=temp
-for i in range(n):
+for i in range(n):#Reverse
     arr[i]=arr[i][::-1]
         
 for i in range(n):
